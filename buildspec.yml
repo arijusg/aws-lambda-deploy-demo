@@ -5,7 +5,6 @@ phases:
       - npm install time
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket aws-lambda-deploy-demo
                                    --output-template-file NewSamTemplate.yaml
-                                   --stack-name MyBetaStack
 artifacts:
   type: zip
   files:
